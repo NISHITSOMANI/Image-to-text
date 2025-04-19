@@ -30,6 +30,7 @@ def home():
             img = preprocess_image(img)
             extracted_text = pytesseract.image_to_string(img)
     return render_template("index.html", text=extracted_text)
-
+    
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0")
+    app.run(host="0.0.0.0", port=5000)
+
