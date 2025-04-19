@@ -65,11 +65,12 @@
       </form>
 
       {% if text %}
-      <div class="mt-4">
-        <label class="form-label">📝 Extracted Text:</label>
-        <textarea class="form-control" readonly>{{ text }}</textarea>
-      </div>
-      {% endif %}
+<div class="mt-4">
+  <label class="form-label">📝 Extracted Text:</label>
+  <textarea class="form-control" readonly style="height: 400px; font-size: 1rem; background-color: #f4f4f4;">{{ text }}</textarea>
+</div>
+{% endif %}
+
     </div>
   </div>
 
