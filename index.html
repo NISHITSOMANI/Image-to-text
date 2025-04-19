@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<body>
+    <h1>Upload Image or PDF</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="file-upload">Upload your file:</label>
+        <input type="file" id="file-upload" name="file" title="Choose a file to upload" required>
+        <button type="submit">Extract Text</button>
+    </form>
+    {% if text %}
+        <h2>Extracted Text:</h2>
+        <pre>{{ text }}</pre>
+    {% endif %}
+</body>
+</html>
